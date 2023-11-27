@@ -3,6 +3,12 @@
 - mkdocs 1.5.x
 
 ## Istruzioni fornite
+### TIPS
+Per non creare problemi con il setup di python in locale
+```
+python3 -m venv .venv
+source .venv/bin/activate
+``````
 Posizionarsi nella cartella dei sorgenti `doc-custom-app` dove si possono svolgere le seguenti operazioni
 
 ### Anteprima
