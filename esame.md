@@ -17,4 +17,4 @@ Compito dei componenti Ops del team è predisporre immagine versionata e immutab
   * una replica
   * i limits delle risorse impostate a min 50 MB e max 100MB
   * limits nella dimensione dei log
-* [10 pt] Aggiungere al repository un devcontainer per l'esecuzione locale, riutilizzando il dockerfile già predisposto al punto 1. Taggare i sorgenti con il tag 2.0.0
+* [10 pt] Aggiungere al repository un devcontainer per l'esecuzione locale, usando immagine docker di python basata su debian
