@@ -15,3 +15,5 @@ Per visualizzare il contenuto in anteprima il comando è il seguente:
 
 Per visualizzare il contenuto in anteprima il comando è il seguente:
 `$ mkdocs build`
+
+Il sito compilato si trova nella sottocartella `site`
