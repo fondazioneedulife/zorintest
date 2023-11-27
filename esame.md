@@ -7,7 +7,7 @@ Compito dei componenti Ops del team è predisporre immagine versionata e immutab
 
 # Utilizzare il repository dei sorgenti fornito e predisporre le seguenti attività
 
-* [40 pt] container nginx con il sito compilato ed esposto
+* [40 pt] immagine docker nginx con il sito compilato ed esposto
   * occorre prestare attenzione alla  dimensione dell'immagine
   * i sorgenti vanno presi dal tag 1.0.0 del repository
 * [50 pt] docker stack con:
