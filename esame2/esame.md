@@ -9,7 +9,7 @@ Quando è in esecuzione espone qualcosa come questo
 ![Alt text](image.png)
 
 # CONSEGNA
-Realizzare uno script che posizioni la cartella ```src``` nella cartella del dockerfile ```containers/docker_hello```
+Realizzare uno script ```build.sh``` che posizioni la cartella ```src``` nella cartella del dockerfile ```containers/docker_hello```
 
 [50 pnt ]Realizzare un Dockerfile:
 - prende come argomento la porta di esposizione del container
