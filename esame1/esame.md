@@ -22,4 +22,8 @@ Test superato se, eseguito lo script `build.sh`, è possibile vedere il sito com
   * una replica
   * i limits delle risorse impostate a min 20 MB con un quarto di cpu e max 50MB con mezza cpu
   * limits nella dimensione dei log a piacere
+  * il docker compose deve compilare i sorgenti direttamente in fase di esecuzione
+
+Test superato se, eseguendo `docker-compose up`, è possibile vedere il sito compilato interrogando http://localhost:8080 dal proprio host
+
 * [10 pt] Aggiungere al repository un devcontainer per l'esecuzione locale, usando immagine docker di python basata su debian
