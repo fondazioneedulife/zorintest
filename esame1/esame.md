@@ -10,11 +10,16 @@ Compito dei componenti Ops del team è predisporre immagine versionata e immutab
 
 # Utilizzare il repository dei sorgenti fornito e predisporre le seguenti attività
 
-* [40 pt] immagine docker nginx con il sito compilato ed esposto
+* [40 pt] Scrivere Dockerfile per realizzare immagine docker nginx con il sito compilato ed esposto
   * occorre prestare attenzione alla  dimensione dell'immagine
-  * i sorgenti vanno presi dal tag 1.0.0 del repository
-* [50 pt] docker stack con:
+  * utilizzare le versioni python richieste da mkdocs e definite nel reamde per eseguire la compilazione
+  * utilizzare l'ultima versione ngnix nella distribuzione alpine
+  * Scrivere uno script `build.sh` da usare per testare build ed esecuzione.
+
+Test superato se, eseguito lo script `build.sh`, è possibile vedere il sito compilato interrogando http://localhost:8080 dal proprio host
+
+* [50 pt] docker compose con:
   * una replica
-  * i limits delle risorse impostate a min 50 MB e max 100MB
-  * limits nella dimensione dei log
+  * i limits delle risorse impostate a min 20 MB con un quarto di cpu e max 50MB con mezza cpu
+  * limits nella dimensione dei log a piacere
 * [10 pt] Aggiungere al repository un devcontainer per l'esecuzione locale, usando immagine docker di python basata su debian

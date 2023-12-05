@@ -6,20 +6,23 @@
 ### TIPS
 Per non creare problemi con il setup di python in locale
 ```
-python3 -m venv .venv
-source .venv/bin/activate
-``````
-Posizionarsi nella cartella dei sorgenti `doc-custom-app` dove si possono svolgere le seguenti operazioni
+$ docker run -v $(pwd):/app -ti --entrypoint /bin/bash -p 8000:8000 python:3.11.7-slim-bullseye
+```
+posizionarsi nella cartella dei sorgenti `doc-custom-app` e installare le dipendenze con:
+```
+pip install -r requirements.txt
+```
 
 ### Anteprima
 
 Per visualizzare il contenuto in anteprima il comando è il seguente:
 
-`$ mkdocs serve`
+`$ mkdocs serve -a 0.0.0.0:8000`
 
 ### Compilazione
 
-Per visualizzare il contenuto in anteprima il comando è il seguente:
+Per compilare il sito utilizzare:
 `$ mkdocs build`
 
-Il sito compilato si trova nella sottocartella `site`
+Il sito compilato si trova nella sottocartella `site` es: 
+/app/doc-custom-app/site

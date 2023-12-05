@@ -1,0 +1,28 @@
+# Utilizzo la version docker-compose 3.8 https://docs.docker.com/compose/compose-file/compose-file-v3/
+version: "3.8"
+services:
+# Definisco un servizio denominato "docs" e uso come immagine quella di un dockerfile
+  docs:
+    build:
+      context: .
+      dockerfile: ./Dockerfile 
+    # espongo la porta 80 del container nella porta 8080 del servizio
+    ports:
+      - 8080:80
+    # Insieme delle policy di deploy
+    deploy:
+      mode: replicated
+      # se fossero due repliche il sistema andrebbe in errore perché la porta è già occupata
+      replicas: 1
+      resources:
+      # imposta mezza cpu come limite massimo e 50M di ram
+        limits:
+          cpus: '0.50'
+          memory: 50M
+      # imposta 0.25 cpu come richiesta minima e 20M di ram
+        reservations:
+          cpus: '0.20'
+          memory: 20M
+    logging:
+      options:
+        max-size: "50m"
