@@ -11,10 +11,15 @@ Quando è in esecuzione espone qualcosa come questo
 # CONSEGNA
 Realizzare uno script ```build.sh``` che posizioni la cartella ```src``` nella cartella del dockerfile ```containers/docker_hello```
 
+Nella cartella ```containers/docker_hello```
 [50 pnt ]Realizzare un Dockerfile:
-- prende come argomento la porta di esposizione del container
+- In fase di build riceve come argomento la porta da usare per l'esposizione del servizio, definire nome argomento a piacere
 - esegue il sorgente node con entrypoint ```node main.js```
 - utilizza l'ultima immagine lts alpine di node disponibile
+
+Eseguire lo script ```build.sh``` dalla root del progetto per posizionare la cartella dei sorgenti nella folder di build dell'immagine docker
+
+Eseguire il comando di build del dockerfile passando come argomento le variabili richiesti
 
 [50 pnt] Realizza il docker compose:
 - esegue l'immagine precedentemente buildata
